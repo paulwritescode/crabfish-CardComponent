@@ -6,39 +6,57 @@
   font-family: Montserrat;
   box-sizing: border-box;
 }
-.cardbackground {
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: hsl(30, 38%, 92%);
+  justify-content: center;
+  align-items: center;
+}
+/* .cardbackground {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
+} */
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   border-radius: 12px;
   padding: 0px;
+  max-width: 50vw;
+  height: 60vh;
 }
 .left {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0px;
-  margin: 0px;
+  width: 100%;
+  margin: 0px auto;
+  height: 100%;
 }
 .left img {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  width: 300px;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
+  width: inherit;
+  height: 100%;
+  object-fit: cover;
 }
+
 .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
-  width: 300px;
+  width: inherit;
+  height: 100%;
+  background-color: white;
 }
 
 .perfume {
@@ -49,6 +67,7 @@
   font-size: 40px;
   font-family: Fraunces;
   margin: 20px 0px 20px 0px;
+  width: 100%;
 }
 
 .floral {
@@ -57,7 +76,7 @@
 .numbers {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5%;
   width: 100%;
   margin: 20px 0px 20px 0px;
   color: hsl(158, 36%, 37%);
@@ -68,6 +87,7 @@
 span {
   color: rgb(151, 151, 151);
   text-decoration: line-through;
+  width: 100%;
 }
 
 button {
