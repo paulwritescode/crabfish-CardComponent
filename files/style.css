@@ -1,0 +1,23 @@
+.cardbackground {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.left img {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 300px;
+}
+.right {
+  padding: 17px;
+  width: 300px;
+}
